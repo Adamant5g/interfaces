@@ -110,3 +110,31 @@ data class Photo(
     val photo130: String,
     val photo604: String
 )
+
+// Класс для аудио
+data class Audio(
+    val id: Int,
+    val ownerId: Int,
+    val artist: String,
+    val title: String,
+    val duration: Int
+)
+
+// Класс для документа
+data class Document(
+    val id: Int,
+    val ownerId: Int,
+    val title: String,
+    val size: Int,
+    val ext: String,
+    val url: String
+)
+
+// Класс для ссылки
+data class Link(
+    val url: String,
+    val title: String,
+    val caption: String?,
+    val description: String,
+    val photo: Photo?
+)
